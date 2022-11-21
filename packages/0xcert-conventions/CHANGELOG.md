@@ -1,6 +1,11 @@
 # Change Log - @0xcert/conventions
 
-This log was last generated on Mon, 15 Mar 2021 13:36:23 GMT and should not be manually modified.
+This log was last generated on Mon, 21 Nov 2022 08:21:38 GMT and should not be manually modified.
+
+## 2.2.0
+Mon, 21 Nov 2022 08:21:38 GMT
+
+*Version update only*
 
 ## 2.1.1
 Mon, 15 Mar 2021 13:36:23 GMT
