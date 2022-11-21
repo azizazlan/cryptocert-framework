@@ -2,8 +2,8 @@ import {
   GatewayConfig,
   GenericProvider,
   SignMethod,
-} from '@0xcert/ethereum-generic-provider';
-import { fetchJson } from '@0xcert/utils';
+} from "@0xcert/ethereum-generic-provider";
+import { fetchJson } from "@0xcert/utils";
 
 /**
  * HTTP RPC client options interface.
@@ -18,17 +18,17 @@ export interface HttpProviderOptions {
    * Http call cache options.
    */
   cache?:
-    | 'default'
-    | 'no-cache'
-    | 'reload'
-    | 'force-cache'
-    | 'only-if-cached'
+    | "default"
+    | "no-cache"
+    | "reload"
+    | "force-cache"
+    | "only-if-cached"
     | string;
 
   /**
    * Http call credentials.
    */
-  credentials?: 'include' | 'same-origin' | 'omit' | string;
+  credentials?: "include" | "same-origin" | "omit" | string;
 
   /**
    * Http call headers.
@@ -38,12 +38,12 @@ export interface HttpProviderOptions {
   /**
    * Http call mode.
    */
-  mode?: 'no-cors' | 'cors' | 'same-origin' | string;
+  mode?: "no-cors" | "cors" | "same-origin" | string;
 
   /**
    * Http call redirect.
    */
-  redirect?: 'manual' | 'follow' | 'error' | string;
+  redirect?: "manual" | "follow" | "error" | string;
 
   /**
    * Type of signature that will be used in making claims etc.
@@ -120,7 +120,7 @@ export class HttpProvider extends GenericProvider {
    */
   public constructor(options: HttpProviderOptions) {
     super(options);
-    console.log('constructor');
+    console.log("hello there constructor");
     this._options = options;
     this._client = this;
   }
@@ -145,15 +145,15 @@ export class HttpProvider extends GenericProvider {
    */
   public send(data: any, callback: (err, data) => any) {
     const { url, ...options } = {
-      url: 'http://localhost:8545',
+      url: "http://localhost:8545",
       ...this._options,
     };
 
     return fetchJson(url, {
       ...options,
-      method: 'POST',
+      method: "POST",
       body: JSON.stringify(data),
-      headers: { 'Content-Type': 'application/json' },
+      headers: { "Content-Type": "application/json" },
     })
       .then((res) => {
         return res;
