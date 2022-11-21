@@ -1,11 +1,14 @@
-import { GatewayConfig, GenericProvider, SignMethod } from '@0xcert/ethereum-generic-provider';
+import {
+  GatewayConfig,
+  GenericProvider,
+  SignMethod,
+} from '@0xcert/ethereum-generic-provider';
 import { fetchJson } from '@0xcert/utils';
 
 /**
  * HTTP RPC client options interface.
  */
 export interface HttpProviderOptions {
-
   /**
    * Default account from which all mutations are made.
    */
@@ -14,7 +17,13 @@ export interface HttpProviderOptions {
   /**
    * Http call cache options.
    */
-  cache?: 'default' | 'no-cache' | 'reload' | 'force-cache' | 'only-if-cached' | string;
+  cache?:
+    | 'default'
+    | 'no-cache'
+    | 'reload'
+    | 'force-cache'
+    | 'only-if-cached'
+    | string;
 
   /**
    * Http call credentials.
@@ -24,7 +33,7 @@ export interface HttpProviderOptions {
   /**
    * Http call headers.
    */
-  headers?: {[key: string]: string};
+  headers?: { [key: string]: string };
 
   /**
    * Http call mode.
@@ -101,7 +110,6 @@ export interface HttpProviderOptions {
  * HTTP RPC client.
  */
 export class HttpProvider extends GenericProvider {
-
   /**
    * Default options set from constructor.
    */
@@ -112,7 +120,7 @@ export class HttpProvider extends GenericProvider {
    */
   public constructor(options: HttpProviderOptions) {
     super(options);
-
+    console.log('constructor');
     this._options = options;
     this._client = this;
   }
@@ -136,7 +144,6 @@ export class HttpProvider extends GenericProvider {
    * Sends the RPC call.
    */
   public send(data: any, callback: (err, data) => any) {
-
     const { url, ...options } = {
       url: 'http://localhost:8545',
       ...this._options,
@@ -146,14 +153,16 @@ export class HttpProvider extends GenericProvider {
       ...options,
       method: 'POST',
       body: JSON.stringify(data),
-      headers: {'Content-Type': 'application/json' },
-    }).then((res) => {
-      return res;
-    }).then((res) => {
-      return callback(null, res);
-    }).catch((err) => {
-      return callback(err, null);
-    });
+      headers: { 'Content-Type': 'application/json' },
+    })
+      .then((res) => {
+        return res;
+      })
+      .then((res) => {
+        return callback(null, res);
+      })
+      .catch((err) => {
+        return callback(err, null);
+      });
   }
-
 }
