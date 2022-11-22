@@ -1,1 +1,1 @@
-# A stripped down version of the original 0xcert. The framework focuses on certification.
+# A stripped down version of the original 0xcert. The framework focuses on certification on the Ethereum.
