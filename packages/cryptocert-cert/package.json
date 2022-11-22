@@ -1,7 +1,7 @@
 {
   "name": "@cryptocert/cert",
-  "version": "2.2.1",
-  "description": "Asset certification module for cryptocert Framework.",
+  "version": "2.2.2",
+  "description": "Asset certification module for cryptocert framework.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
@@ -31,14 +31,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/0xcert/framework.git"
+    "url": "git+https://github.com/azizazlan/cryptocert-framework"
   },
   "bugs": {
-    "url": "https://github.com/0xcert/framework/issues"
+    "url": "https://github.com/azizazlan/cryptocert-framework"
   },
-  "homepage": "https://github.com/0xcert/framework#readme",
+  "homepage": "https://github.com/azizazlan/cryptocert-framework",
   "keywords": [
-    "0xcert",
     "framework",
     "protocol",
     "asset",
@@ -54,13 +53,10 @@
     "javascript",
     "typescript",
     "nodejs",
-    "vuejs",
-    "nuxtjs",
     "npm",
     "libraries",
     "smart-contract",
-    "ethereum",
-    "zxc"
+    "ethereum"
   ],
   "license": "MIT",
   "devDependencies": {
@@ -78,8 +74,8 @@
     "typescript": "4.1.3"
   },
   "dependencies": {
-    "@cryptocert/utils": "2.2.0",
-    "@cryptocert/merkle": "2.2.0",
-    "@cryptocert/conventions": "2.2.1"
+    "@cryptocert/utils": "2.2.2",
+    "@cryptocert/merkle": "2.2.1",
+    "@cryptocert/conventions": "2.2.2"
   }
 }

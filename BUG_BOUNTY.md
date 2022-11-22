@@ -2,11 +2,11 @@
 
 # 0xcert Framework Bug Bounty
 
-*This documents 0xcert's bug bounty process and how you can get rewarded for finding issues with the 0xcert Framework.*
+_This documents 0xcert's bug bounty process and how you can get rewarded for finding issues with the 0xcert Framework._
 
 ## Sponsors
 
-**Sponsor this bug bounty if you support the 0xcert Framework**. This means you will commit to paying researchers that demonstrate a problem. Contact us at [bounty@0xcert.org](mailto:bounty@0xcert.org) if interested. Thank you.
+**Sponsor this bug bounty if you support the 0xcert Framework**. This means you will commit to paying researchers that demonstrate a problem. Contact us at [bountycryptocert.org](mailto:bountycryptocert.org) if interested. Thank you.
 
 [![0xcert](https://img.shields.io/badge/0xcert-10.000.000%20ZXC-red.svg)](https://0xcert.org)
 
@@ -26,11 +26,11 @@ Help us find any problems with the [0xcert Framework](https://docs.0xcert.org). 
 
 Following is a [risk rating model](https://www.owasp.org/index.php/OWASP_Risk_Rating_Methodology) that judges the severity of an issue based on its likelihood and impact.
 
-|                 | LOW LIKELIHOOD  | :left_right_arrow: | HIGH LIKELIHOOD      |
-| --------------- | --------------- | ------------------ | -------------------- |
+|                 | LOW LIKELIHOOD  | :left_right_arrow: | HIGH LIKELIHOOD  |
+| --------------- | --------------- | ------------------ | ---------------- |
 | **HIGH IMPACT** | Medium severity | High severity      | Highest severity |
-| :arrow_up_down: | Low severity    | Medium severity    | High severity        |
-| **LOW IMPACT**  | *Notable*       | Low severity       | Medium severity      |
+| :arrow_up_down: | Low severity    | Medium severity    | High severity    |
+| **LOW IMPACT**  | _Notable_       | Low severity       | Medium severity  |
 
 Rewards:
 
@@ -44,17 +44,17 @@ Rewards:
 
 Examples of impact:
 
-- *High impact* — steal an asset/value from someone else, impersonate the ledger owner, atomic order distributes assets incorrectly
-- *Medium impact* — cause a function to fail or performs a wrong operation
-- *Low impact* — an obvious mistake in the documentation that affects the development process and validity of the applied code
-- *Notable* — typos, missing comments
+- _High impact_ — steal an asset/value from someone else, impersonate the ledger owner, atomic order distributes assets incorrectly
+- _Medium impact_ — cause a function to fail or performs a wrong operation
+- _Low impact_ — an obvious mistake in the documentation that affects the development process and validity of the applied code
+- _Notable_ — typos, missing comments
 
 Examples of likelihood:
 
-* *High likelihood* — affects all users of the ledger performing a certain function,
-* *Medium likelihood* — affects a number of end users in a scenario that actually happens naturally in production deployments,
-* *Low likelihood* — affects two end users only if they are cooperating together to exploit a specially crafted mutation,
-* *Notable* — affects developers and grammarians but not end users.
+- _High likelihood_ — affects all users of the ledger performing a certain function,
+- _Medium likelihood_ — affects a number of end users in a scenario that actually happens naturally in production deployments,
+- _Low likelihood_ — affects two end users only if they are cooperating together to exploit a specially crafted mutation,
+- _Notable_ — affects developers and grammarians but not end users.
 
 How to win:
 
@@ -69,13 +69,13 @@ Rules for bounty sponsor:
 
 ## More questions
 
-* If you prefer to send us a bug report privately so that a fix can be developed concurrently with the announcement you are welcome to mail us at [bounty@0xcert.org](mailto:bounty@0xcert.org). You are welcome to make a hashed bug report (set issue body to hash of your message). This will still be eligible for payment and recognition.
+- If you prefer to send us a bug report privately so that a fix can be developed concurrently with the announcement you are welcome to mail us at [bountycryptocert.org](mailto:bountycryptocert.org). You are welcome to make a hashed bug report (set issue body to hash of your message). This will still be eligible for payment and recognition.
 
-* Will things change during the bounty program?
-  * Yes, we are seeking sponsors and will add additional prizes here if that happens.
-  * Yes, we will update the code and redeploy the contract. So, click [:star: STAR and :eye: WATCH](https://github.com/0xcert/framework/) above on this repo for updates.
+- Will things change during the bounty program?
+  - Yes, we are seeking sponsors and will add additional prizes here if that happens.
+  - Yes, we will update the code and redeploy the contract. So, click [:star: STAR and :eye: WATCH](https://github.com/0xcert/framework/) above on this repo for updates.
 
-- Taxes?
+* Taxes?
   - If you earn so much money that you will need to fill out a tax form, then we will ask you to do so. This program is subject to the laws of the Republic of Slovenia.
 
 Released under the [MIT License](LICENSE).

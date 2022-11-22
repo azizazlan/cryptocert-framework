@@ -1,0 +1,20 @@
+import { AssetLedgerDeployOrder } from "cryptocert/scaffold";
+import { Gateway } from "../../core/gateway";
+import { createOrderHash } from "../../lib/asset-ledger-deploy-order";
+
+/**
+ * Creates deploy hash, signs it and returns eth signed deploy claim.
+ * @param gateway Gateway instance.
+ * @param deploy Deploy data.
+ */
+export default async function (
+  gateway: Gateway,
+  order: AssetLedgerDeployOrder
+) {
+  const message = createOrderHash(gateway, order);
+  const res = await gateway.provider.post({
+    method: "eth_sign",
+    params: [gateway.provider.accountId, message],
+  });
+  return `${gateway.provider.signMethod}:${res.result}`;
+}

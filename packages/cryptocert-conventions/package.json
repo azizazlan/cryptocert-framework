@@ -1,6 +1,6 @@
 {
   "name": "@cryptocert/conventions",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "Module with implementation of all confirmed conventions.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -31,14 +31,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/0xcert/framework.git"
+    "url": "git+https://github.com/azizazlan/cryptocert-framework"
   },
   "bugs": {
-    "url": "https://github.com/0xcert/framework/issues"
+    "url": "https://github.com/azizazlan/cryptocert-framework"
   },
-  "homepage": "https://github.com/0xcert/framework#readme",
+  "homepage": "https://github.com/azizazlan/cryptocert-framework",
   "keywords": [
-    "0xcert",
     "framework",
     "protocol",
     "asset",
@@ -54,13 +53,10 @@
     "javascript",
     "typescript",
     "nodejs",
-    "vuejs",
-    "nuxtjs",
     "npm",
     "libraries",
     "smart-contract",
-    "ethereum",
-    "zxc"
+    "ethereum"
   ],
   "license": "MIT",
   "devDependencies": {

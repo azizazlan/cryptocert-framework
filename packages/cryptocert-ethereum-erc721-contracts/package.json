@@ -1,0 +1,89 @@
+{
+  "name": "@cryptocert/ethereum-erc721-contracts",
+  "version": "2.2.1",
+  "description": "Smart contract implementation of the ERC-721 standard on the Ethereum blockchain.",
+  "scripts": {
+    "build": "npm run clean && npx specron compile && npx tsc",
+    "clean": "rm -Rf ./build",
+    "lint": "npm run tslint && npm run solhint",
+    "sandbox": "npx specron sandbox",
+    "solhint": "npx solhint 'src/contracts/**/*.sol'",
+    "test": "npm run lint && npm run clean && npx specron compile && npx specron test",
+    "tslint": "npx eslint 'src/**/*.ts?(x)'"
+  },
+  "specron": {
+    "compiler": {
+      "build": "./build",
+      "match": [
+        "./src/**/*.sol"
+      ]
+    },
+    "flattener": {
+      "build": "./build",
+      "match": [
+        "./src/**/*.sol"
+      ],
+      "severities": [
+        "error",
+        "warning"
+      ]
+    },
+    "test": {
+      "port": 8508,
+      "match": [
+        "./src/tests/**/*.test.ts"
+      ]
+    },
+    "require": [
+      "ts-node/register"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azizazlan/cryptocert-framework"
+  },
+  "bugs": {
+    "url": "https://github.com/azizazlan/cryptocert-framework"
+  },
+  "homepage": "https://github.com/azizazlan/cryptocert-framework",
+  "keywords": [
+    "framework",
+    "protocol",
+    "asset",
+    "value",
+    "values",
+    "currency",
+    "token",
+    "non-fungible",
+    "fungible",
+    "erc-721",
+    "erc-20",
+    "blockchain",
+    "javascript",
+    "typescript",
+    "nodejs",
+    "npm",
+    "libraries",
+    "smart-contract",
+    "ethereum"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@specron/cli": "0.17.3",
+    "@specron/spec": "0.17.3",
+    "@specron/flattener": "0.17.3",
+    "@cryptocert/ethereum-utils-contracts": "2.2.3",
+    "solc": "0.8.6",
+    "solhint": "3.3.2",
+    "ts-node": "9.1.1",
+    "@typescript-eslint/eslint-plugin": "4.13.0",
+    "@typescript-eslint/parser": "4.13.0",
+    "eslint-config-prettier": "7.1.0",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jsdoc": "31.0.3",
+    "eslint-plugin-unicorn": "26.0.0",
+    "eslint": "7.17.0",
+    "typescript": "4.1.3",
+    "web3": "1.3.1"
+  }
+}

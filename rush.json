@@ -13,104 +13,99 @@
   },
   "projects": [
     {
-      "packageName": "@0xcert/cert",
+      "packageName": "@cryptocert/cert",
       "projectFolder": "packages/0xcert-cert",
       "versionPolicyName": "patchAll"
     },
     {
-      "packageName": "@0xcert/merkle",
+      "packageName": "@cryptocert/merkle",
       "projectFolder": "packages/0xcert-merkle",
       "versionPolicyName": "patchAll"
     },
     {
-      "packageName": "@0xcert/scaffold",
+      "packageName": "@cryptocert/scaffold",
       "projectFolder": "packages/0xcert-scaffold",
       "versionPolicyName": "patchAll"
     },
     {
-      "packageName": "@0xcert/conventions",
+      "packageName": "@cryptocert/conventions",
       "projectFolder": "packages/0xcert-conventions",
       "versionPolicyName": "patchAll"
     },
     {
-      "packageName": "@0xcert/utils",
+      "packageName": "@cryptocert/utils",
       "projectFolder": "packages/0xcert-utils",
       "versionPolicyName": "patchAll"
     },
     {
-      "packageName": "@0xcert/ethereum-asset-ledger",
+      "packageName": "@cryptocert/ethereum-asset-ledger",
       "projectFolder": "packages/0xcert-ethereum-asset-ledger",
       "versionPolicyName": "patchAll"
     },
     {
-      "packageName": "@0xcert/ethereum-erc20-contracts",
+      "packageName": "@cryptocert/ethereum-erc20-contracts",
       "projectFolder": "packages/0xcert-ethereum-erc20-contracts",
       "versionPolicyName": "patchAll"
     },
     {
-      "packageName": "@0xcert/ethereum-erc721-contracts",
+      "packageName": "@cryptocert/ethereum-erc721-contracts",
       "projectFolder": "packages/0xcert-ethereum-erc721-contracts",
       "versionPolicyName": "patchAll"
     },
     {
-      "packageName": "@0xcert/ethereum-generic-provider",
+      "packageName": "@cryptocert/ethereum-generic-provider",
       "projectFolder": "packages/0xcert-ethereum-generic-provider",
       "versionPolicyName": "patchAll"
     },
     {
-      "packageName": "@0xcert/ethereum-http-provider",
+      "packageName": "@cryptocert/ethereum-http-provider",
       "projectFolder": "packages/0xcert-ethereum-http-provider",
       "versionPolicyName": "patchAll"
     },
     {
-      "packageName": "@0xcert/ethereum-metamask-provider",
+      "packageName": "@cryptocert/ethereum-metamask-provider",
       "projectFolder": "packages/0xcert-ethereum-metamask-provider",
       "versionPolicyName": "patchAll"
     },
     {
-      "packageName": "@0xcert/ethereum-gateway-contracts",
+      "packageName": "@cryptocert/ethereum-gateway-contracts",
       "projectFolder": "packages/0xcert-ethereum-gateway-contracts",
       "versionPolicyName": "patchAll"
     },
     {
-      "packageName": "@0xcert/ethereum-gateway",
+      "packageName": "@cryptocert/ethereum-gateway",
       "projectFolder": "packages/0xcert-ethereum-gateway",
       "versionPolicyName": "patchAll"
     },
     {
-      "packageName": "@0xcert/ethereum-proxy-contracts",
+      "packageName": "@cryptocert/ethereum-proxy-contracts",
       "projectFolder": "packages/0xcert-ethereum-proxy-contracts",
       "versionPolicyName": "patchAll"
     },
     {
-      "packageName": "@0xcert/ethereum-sandbox",
+      "packageName": "@cryptocert/ethereum-sandbox",
       "projectFolder": "packages/0xcert-ethereum-sandbox",
       "versionPolicyName": "patchAll"
     },
     {
-      "packageName": "@0xcert/ethereum-utils",
+      "packageName": "@cryptocert/ethereum-utils",
       "projectFolder": "packages/0xcert-ethereum-utils",
       "versionPolicyName": "patchAll"
     },
     {
-      "packageName": "@0xcert/ethereum-utils-contracts",
+      "packageName": "@cryptocert/ethereum-utils-contracts",
       "projectFolder": "packages/0xcert-ethereum-utils-contracts",
       "versionPolicyName": "patchAll"
     },
     {
-      "packageName": "@0xcert/ethereum-value-ledger",
+      "packageName": "@cryptocert/ethereum-value-ledger",
       "projectFolder": "packages/0xcert-ethereum-value-ledger",
       "versionPolicyName": "patchAll"
     },
     {
-      "packageName": "@0xcert/ethereum-xcert-contracts",
+      "packageName": "@cryptocert/ethereum-xcert-contracts",
       "projectFolder": "packages/0xcert-ethereum-xcert-contracts",
       "versionPolicyName": "patchAll"
-    },
-    {
-      "packageName": "@0xcert/webpack",
-      "projectFolder": "packages/0xcert-webpack",
-      "shouldPublish": false
     }
   ]
 }
