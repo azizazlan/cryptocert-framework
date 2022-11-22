@@ -1,1 +1,3 @@
-# A stripped down version of the original 0xcert. The framework focuses on certification on the Ethereum.
+# cryptocert - ethereum certification framework
+
+## A stripped down version of the original 0xcert. The framework focuses on certification on the Ethereum.
